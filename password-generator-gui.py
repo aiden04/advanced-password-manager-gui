@@ -232,9 +232,22 @@ def pass_list():
 
 def Themes():
     layout = [
-    [sg.Text('Theme Changer')],
-    [sg.Text('Theme Name', size =(10,1)), sg.Input()],
-    [sg.Button('Theme Previewer'), sg.Button('Change Theme'), sg.Button('Main Menu')]]
+    [sg.Text('''
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░████████╗██╗░░██╗███████╗███╗░░░███╗███████╗░██████╗░
+░╚══██╔══╝██║░░██║██╔════╝████╗░████║██╔════╝██╔════╝░
+░░░░██║░░░███████║█████╗░░██╔████╔██║█████╗░░╚█████╗░░
+░░░░██║░░░██╔══██║██╔══╝░░██║╚██╔╝██║██╔══╝░░░╚═══██╗░
+░░░░██║░░░██║░░██║███████╗██║░╚═╝░██║███████╗██████╔╝░
+░░░░╚═╝░░░╚═╝░░╚═╝╚══════╝╚═╝░░░░░╚═╝╚══════╝╚═════╝░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░''')],
+    [sg.Text(' - To change the theme, enter the exact name of the theme as shown in theme')],
+    [sg.Text('previewer.')],
+    [sg.Text(' - Otherwise leave blank for a random theme.')],
+    [sg.ProgressBar(1, size =(44,1))],
+    [sg.Text('Theme Name', size =(10,1)), sg.Input('', key='Theme')],
+    [sg.ProgressBar(1, size =(44,1))],
+    [sg.Button('Change Theme'), sg.Button('Theme Previewer'), sg.Button('Main Menu')]]
     
     Main = sg.Window('Theme Changer', layout, modal=False)
     
@@ -246,7 +259,7 @@ def Themes():
             sg.theme_previewer()
             Themes()
         if event == 'Change Theme':
-            sg.theme(values[0])
+            sg.theme(values['Theme'])
             Main.hide()
             main()
         if event == 'Main Menu':
