@@ -1,7 +1,7 @@
 # advanced-password-manager-gui
 New updated password manager with a gui using "PySimpleGUI"
 
-# Simple setuo
+# Simple setup
 just run cmd in advanced-password-manager-gui-master
 run the command "pip install -r requirements.txt
 done
