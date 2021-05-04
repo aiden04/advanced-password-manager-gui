@@ -7,13 +7,39 @@
   Advanced Password Manager GUI
 </h1>
 
-- This is a graphical user interfaced password manager. It has the ability to generate passwords or enter your own password while savving all the information to a document in the direcotry avalibale for vewing in the script!
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/9298623/117012344-d908e500-acbc-11eb-8480-38d54021543c.png"/>
+</p>
 
-## Has a very easy setup
-- Just need to run a few simple commands:
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/9298623/117012770-44eb4d80-acbd-11eb-84fd-b735a10e2aa9.png"/>
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/9298623/117015289-90066000-acbf-11eb-8cbc-faf11fdf6906.png"/>
+</p>
+
+## Description
+- A password manager with a saving and generating mechanism, you can view a list of the saved passwords in the script. Very easy to use and a very easy setup process.
+
+## Features
+- Password Generator
+- Password Saving
+- Password Viewer
+- Theme Changer
+- Set custom password output path
+
+## Dependinces
+- PySimpleGUI
+
+## Usage
 ```
 git https://github.com/aiden04/advanced-password-manager-gui.git
 cd advanced-password-manager-gui-main
-pip install -r requirements.txt
-python3 password_manager_gui
+pip install -r requirements
+python3 password_manager_gui.py
 ```
+
+## Lincense
+This software is available under the following licenses:
+- GNU
