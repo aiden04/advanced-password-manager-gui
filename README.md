@@ -33,7 +33,7 @@
 - PySimpleGUI
 
 ## Usage
-```
+```batch
 git https://github.com/aiden04/advanced-password-manager-gui.git
 cd advanced-password-manager-gui-main
 pip install -r requirements
